@@ -189,7 +189,9 @@ Copy-paste this while creating a PR:
 ```bash
 # Install dependencies
 npm install
+```
 
+```bash
 # Start development server
 npm run dev
 ```
