@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const apiKey = import.meta.env.VITE_COIN_GECKO_API_KEY;
+const apiKey = import.meta.env.VITE_COIN_GECKO_DEMO_API_KEY;
 
 export const coinGeckoClient = axios.create({
   baseURL: 'https://api.coingecko.com/api/v3/',
