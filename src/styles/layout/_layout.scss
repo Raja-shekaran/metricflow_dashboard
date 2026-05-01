@@ -1,0 +1,25 @@
+@use '../abstracts/variables' as *;
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: $color-bg-light;
+}
+
+.main {
+  width: 100vw;
+  margin-left: $sidebar-width;
+  transition: margin-left 0.3s ease;
+}
+
+/* 👇 When collapsed */
+.layout.collapsed .main {
+  margin-left: $sidebar-collapsed-width;
+}
+
+/* 👇 Mobile */
+@media (max-width: 768px) {
+  // .main {
+  //   margin-left: 0;
+  // }
+}

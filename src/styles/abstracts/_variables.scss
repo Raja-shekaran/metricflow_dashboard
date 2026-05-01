@@ -1,3 +1,72 @@
-$primary-color: #4f46e5;
-$text-color: #1f2937;
-$spacing-md: 16px;
+// ==========================
+// 🎨 COLORS
+// ==========================
+
+// PRIMARY
+$color-primary: #4338ca;
+$color-primary-light: #6366f1;
+
+// BACKGROUND
+$color-bg-light: #f9fafb;
+$color-bg-dark: #0f172a;
+
+// SURFACE (cards, panels)
+$color-surface-light: #ffffff;
+$color-surface-dark: #1e293b;
+
+// TEXT
+$color-text-primary-light: #111827;
+$color-text-secondary-light: #6b7280;
+
+$color-text-primary-dark: #e5e7eb;
+$color-text-secondary-dark: #9ca3af;
+
+// BORDER
+$color-border-light: #e5e7eb;
+$color-border-dark: #334155;
+
+// ==========================
+// 📏 SPACING (8px system)
+// ==========================
+
+$space-xs: 4px;
+$space-sm: 8px;
+$space-md: 16px;
+$space-lg: 24px;
+$space-xl: 32px;
+$space-2xl: 40px;
+
+// ==========================
+// 🔘 RADIUS
+// ==========================
+
+$radius-sm: 6px;
+$radius-md: 10px;
+$radius-lg: 14px;
+
+// ==========================
+// 🔤 TYPOGRAPHY
+// ==========================
+
+$font-family-base: 'Inter', sans-serif;
+
+$font-size-sm: 12px;
+$font-size-base: 14px;
+$font-size-md: 16px;
+$font-size-lg: 20px;
+$font-size-xl: 24px;
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+
+// ==========================
+// 🧱 LAYOUT TOKENS
+// ==========================
+
+$sidebar-width: 240px;
+$sidebar-collapsed-width: 72px;
+
+$header-height: 64px;
+
+$content-padding: 24px;

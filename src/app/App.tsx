@@ -1,11 +1,11 @@
 import '../styles/components/_app.scss';
+import Layout from '../components/layout/Layout';
 
 const App = () => {
   return (
-    <div className="app-container">
-      <h1>Hello, World!</h1>
-      <p>My first React + TypeScript project.</p>
-    </div>
+    <Layout>
+      <h2>Welcome Dashboard</h2>
+    </Layout>
   );
 };
 

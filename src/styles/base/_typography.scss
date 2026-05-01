@@ -1,4 +1,23 @@
+@use '../abstracts/variables' as *;
+
 body {
-  font-family: Arial, sans-serif;
-  color: #1f2937;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  color: $color-text-primary-light;
+  background-color: $color-bg-light;
+}
+
+h1 {
+  font-size: $font-size-xl;
+  font-weight: $font-weight-semibold;
+}
+
+h2 {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-medium;
+}
+
+p {
+  font-size: $font-size-base;
+  color: $color-text-secondary-light;
 }
