@@ -12,9 +12,11 @@ export const onRequest = (config: InternalAxiosRequestConfig) => {
 };
 
 export const onResponse = (response: AxiosResponse) => {
-  const url = `${response.config.baseURL || ''}${response.config.url || ''}`;
-  console.log(`[RESPONSE] ${url}`);
-
+  console.log('[RESPONSE]', {
+    url: response.config.url,
+    status: response.status,
+    data: response.data,
+  });
   return response;
 };
 
