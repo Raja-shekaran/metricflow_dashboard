@@ -1,7 +1,9 @@
-type CardProps = {
-  children: React.ReactNode;
-};
-
-export default function Card({ children }: CardProps) {
-  return <div className="card">{children}</div>;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default function Card({ title, value }: any) {
+  return (
+    <div className="card">
+      <h2>{title}</h2>
+      <p>{value}</p>
+    </div>
+  );
 }

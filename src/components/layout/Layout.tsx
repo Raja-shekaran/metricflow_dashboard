@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import Sidebar from './Sidebar';
 import Header from './Header';
+import Dashboard from '../../pages/Dashboard';
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export default function Layout({ children }: any) {
+export default function Layout() {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
 
@@ -23,7 +23,9 @@ export default function Layout({ children }: any) {
           toggleTheme={toggleTheme}
           theme={theme}
         />
-        <div className="content">{children}</div>
+        <div className="content">
+          <Dashboard />
+        </div>
       </div>
     </div>
   );

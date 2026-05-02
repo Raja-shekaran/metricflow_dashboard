@@ -17,9 +17,6 @@
   margin-left: $sidebar-collapsed-width;
 }
 
-/* 👇 Mobile */
-@media (max-width: 768px) {
-  // .main {
-  //   margin-left: 0;
-  // }
+.content {
+  margin: 0px 40px;
 }
