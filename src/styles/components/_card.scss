@@ -1,0 +1,13 @@
+@use '../abstracts/variables' as *;
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+
+  border-radius: $radius-lg;
+  padding: $space-lg;
+
+  display: flex;
+  flex-direction: column;
+  gap: $space-md;
+}

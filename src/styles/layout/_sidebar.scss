@@ -3,8 +3,8 @@
 .sidebar {
   width: $sidebar-width;
   height: 100vh;
-  background: $color-surface-light;
-  border-right: 1px solid $color-border-light;
+  background: var(--surface);
+  border-right: 1px solid var(--border);
   padding: $space-md;
 
   position: fixed;

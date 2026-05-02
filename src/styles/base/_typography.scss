@@ -3,8 +3,7 @@
 body {
   font-family: $font-family-base;
   font-size: $font-size-base;
-  color: $color-text-primary-light;
-  background-color: $color-bg-light;
+  color: var(--text-primary);
 }
 
 h1 {

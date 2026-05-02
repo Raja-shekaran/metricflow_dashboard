@@ -7,3 +7,11 @@
 @use './layout/layout';
 @use './layout/sidebar';
 @use './layout/header';
+
+@use './components/button';
+@use './components/card';
+
+@use './themes/light';
+@use './themes/dark';
+
+@use './base/icon';

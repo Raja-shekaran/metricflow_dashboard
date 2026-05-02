@@ -3,7 +3,7 @@
 .layout {
   display: flex;
   min-height: 100vh;
-  background-color: $color-bg-light;
+  background: var(--surface);
 }
 
 .main {
