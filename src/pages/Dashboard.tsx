@@ -1,4 +1,4 @@
-import KpiCard from "../components/dashboard/Kpicard";
+import KpiCard from "../components/dashboard/KpiCard";
 
 export default function Dashboard() {
   return (
