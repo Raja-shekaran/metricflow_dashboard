@@ -1,12 +1,12 @@
-import KpiCard from "../components/dashboard/KpiCard";
+import Card from '../components/common/Card';
 
 export default function Dashboard() {
   return (
     <div className="dashboard">
-      <KpiCard title="Total revenue" value="$1,284,500" />
-      <KpiCard title="Monthly Profit" value="$42,920" />
-      <KpiCard title="Trading Volume" value="$5.2M" />
-      <KpiCard title="Accrued Fees" value="$1,840" />
+      <Card title="Total revenue" value="$1,284" />
+      <Card title="Monthly Profit" value="$42,920" />
+      <Card title="Trading Volume" value="$5.2M" />
+      <Card title="Accrued Fees" value="$1,840" />
     </div>
   );
 }
