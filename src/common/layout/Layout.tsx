@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import Sidebar from './Sidebar';
-import Header from './Header';
-import Dashboard from '../../pages/Dashboard';
+import { Dashboard } from '../../pages/Dashboard';
+import { Header } from './Header';
+import { Sidebar } from './Sidebar';
 
-export default function Layout() {
+export const Layout = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
 
@@ -29,4 +29,4 @@ export default function Layout() {
       </div>
     </div>
   );
-}
+};

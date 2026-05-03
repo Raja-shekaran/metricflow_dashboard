@@ -1,13 +1,10 @@
-type CardProps = {
-  title: string;
-  value: string;
-};
+import type { CardProps } from '../types';
 
-export default function Card(cardProps: CardProps) {
+export const Card = (cardProps: CardProps) => {
   return (
     <div className="card">
       <h2>{cardProps.title}</h2>
       <p>{cardProps.value}</p>
     </div>
   );
-}
+};

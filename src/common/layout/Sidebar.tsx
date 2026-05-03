@@ -1,4 +1,4 @@
-export default function Sidebar({ isCollapsed }: { isCollapsed: boolean }) {
+export const Sidebar = ({ isCollapsed }: { isCollapsed: boolean }) => {
   return (
     <aside
       className={`
@@ -9,4 +9,4 @@ export default function Sidebar({ isCollapsed }: { isCollapsed: boolean }) {
       <h2>{isCollapsed ? 'M' : 'MetricFlow'}</h2>
     </aside>
   );
-}
+};

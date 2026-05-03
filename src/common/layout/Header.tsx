@@ -1,16 +1,7 @@
 import { Bars3Icon, MoonIcon, SunIcon } from '@heroicons/react/24/outline';
+import type { HeaderProps } from '../types';
 
-type HeaderProps = {
-  toggleCollapse: () => void;
-  theme: 'light' | 'dark';
-  toggleTheme: () => void;
-};
-
-export default function Header({
-  toggleCollapse,
-  theme,
-  toggleTheme,
-}: HeaderProps) {
+export const Header = ({ toggleCollapse, theme, toggleTheme }: HeaderProps) => {
   return (
     <header className="header">
       <div className="header__left">
@@ -26,4 +17,4 @@ export default function Header({
       </div>
     </header>
   );
-}
+};

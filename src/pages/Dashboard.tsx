@@ -1,6 +1,6 @@
-import Card from '../components/common/Card';
+import { Card } from '../common/components/Card';
 
-export default function Dashboard() {
+export const Dashboard = () => {
   return (
     <div className="dashboard">
       <Card title="Total revenue" value="$1,284" />
@@ -9,4 +9,4 @@ export default function Dashboard() {
       <Card title="Accrued Fees" value="$1,840" />
     </div>
   );
-}
+};
