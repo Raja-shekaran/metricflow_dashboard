@@ -15,12 +15,10 @@
   z-index: 1000;
 }
 
-/* 👇 COLLAPSED (DESKTOP) */
 .sidebar--collapsed {
   width: $sidebar-collapsed-width;
 }
 
-/* 👇 MOBILE HIDDEN */
 .sidebar {
   transform: translateX(0);
 }

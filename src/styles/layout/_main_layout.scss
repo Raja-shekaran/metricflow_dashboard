@@ -13,7 +13,6 @@
   transition: margin-left 0.3s ease;
 }
 
-/* 👇 When collapsed */
 .layout.collapsed .main {
   margin-left: $sidebar-collapsed-width;
 }
