@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import { coinHistoryService } from '../services/coin.history.service';
+import { coinHistoryService } from '../services/modules/crypto/coin.history.service';
 
 export const useCoinHistory = () => {
   return useQuery({

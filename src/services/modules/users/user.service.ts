@@ -1,4 +1,4 @@
-import { dummyJsonClient } from './api/clients/dummyJsonClient';
+import { dummyJsonClient } from '../../api/clients/dummyJsonClient';
 
 export const userService = {
   getUsers: async () => {

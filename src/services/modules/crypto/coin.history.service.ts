@@ -1,4 +1,4 @@
-import { coinGeckoClient } from './api/clients/coinGeckoClient';
+import { coinGeckoClient } from '../../api/clients/coinGeckoClient';
 
 export const coinHistoryService = {
   getCoinHistory: async () => {
