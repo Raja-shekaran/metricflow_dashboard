@@ -24,9 +24,9 @@
 - [x] Setup Axios instance (API layer)
 - [x] Add base API config (base URL, interceptors)
 - [ ] Setup React Query (QueryClient + Provider)
-- [ ] Setup Zustand store (sidebar toggle)
 - [ ] Define service layer structure
 - [ ] Define data flow: Service → Transform → Hook
+- [ ] Setup Zustand store (sidebar toggle)
 
 #### 👨‍💻 Dev B (UI Foundation)
 
