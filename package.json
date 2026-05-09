@@ -8,9 +8,17 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,md}\""
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,scss,css,json,md}": [
+      "prettier --write"
+    ]
   },
   "dependencies": {
+    "@heroicons/react": "^2.2.0",
     "axios": "^1.15.2",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",

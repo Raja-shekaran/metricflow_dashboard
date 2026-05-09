@@ -1,12 +1,7 @@
-import '../styles/components/_app.scss';
+import { Layout } from '../common/layout/Layout';
 
 const App = () => {
-  return (
-    <div className="app-container">
-      <h1>Hello, World!</h1>
-      <p>My first React + TypeScript project.</p>
-    </div>
-  );
+  return <Layout />;
 };
 
 export default App;

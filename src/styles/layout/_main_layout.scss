@@ -1,0 +1,22 @@
+@use '../abstracts/variables' as *;
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background: var(--surface);
+}
+
+.main {
+  flex: 1;
+  min-width: 0;
+  margin-left: $sidebar-width;
+  transition: margin-left 0.3s ease;
+}
+
+.layout.collapsed .main {
+  margin-left: $sidebar-collapsed-width;
+}
+
+.content {
+  margin: 0px 40px;
+}

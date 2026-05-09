@@ -1,0 +1,9 @@
+@use '../abstracts/variables' as *;
+
+[data-theme='light'] {
+  --bg: #{$color-bg-light};
+  --surface: #{$color-surface-light};
+  --text-primary: #{$color-text-primary-light};
+  --text-secondary: #{$color-text-secondary-light};
+  --border: #{$color-border-light};
+}

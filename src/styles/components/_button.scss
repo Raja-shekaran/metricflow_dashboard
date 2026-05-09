@@ -1,0 +1,35 @@
+@use '../abstracts/variables' as *;
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: $space-sm $space-md;
+  border-radius: $radius-sm;
+
+  font-size: $font-size-base;
+  font-weight: $font-weight-medium;
+
+  cursor: pointer;
+  border: none;
+
+  transition: all 0.2s ease;
+}
+
+/* Primary */
+.btn--primary {
+  background: $color-primary;
+  color: white;
+}
+
+.btn--primary:hover {
+  background: $color-primary-light;
+}
+
+/* Secondary */
+.btn--secondary {
+  background: var(--surface);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+}

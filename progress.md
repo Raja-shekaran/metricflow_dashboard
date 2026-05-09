@@ -30,16 +30,16 @@
 
 #### 👨‍💻 Dev B (UI Foundation)
 
-- [ ] Define SCSS variables (colors, spacing, radius)
-- [ ] Setup typography styles
-- [ ] Setup light & dark theme base
-- [ ] Create base UI components:
-  - [ ] Button
-  - [ ] Card
-- [ ] Create layout skeleton:
-  - [ ] Sidebar
-  - [ ] Header
-  - [ ] Page container
+- [x] Define SCSS variables (colors, spacing, radius)
+- [x] Setup typography styles
+- [x] Setup light & dark theme base
+- [x] Create base UI components:
+  - [x] Button
+  - [x] Card
+- [x] Create layout skeleton:
+  - [x] Sidebar
+  - [x] Header
+  - [x] Page container
 
 ---
 

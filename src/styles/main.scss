@@ -1,7 +1,19 @@
-@use './abstracts/variables' as *;
-@use './abstracts/mixins' as *;
+@use './abstracts/variables';
+@use './abstracts/mixins';
+
+@use './themes/light';
+@use './themes/dark';
 
 @use './base/reset';
+@use './base/globals';
 @use './base/typography';
+@use './base/icon';
 
-@use './components/app';
+@use './layout/main_layout';
+@use './layout/sidebar';
+@use './layout/header';
+
+@use './components/button';
+@use './components/card';
+
+@use './pages/dashboard';
