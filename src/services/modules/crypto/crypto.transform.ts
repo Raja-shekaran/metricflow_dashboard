@@ -6,6 +6,6 @@ export const transformCoinHistory = (
   return {
     price: data.market_data.current_price.usd,
     symbol: data.symbol,
-    marketCap: data.market_data.current_price.usd,
+    marketCap: data.market_data.market_cap.usd,
   };
 };
