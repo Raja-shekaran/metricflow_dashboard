@@ -2,9 +2,12 @@ import { useState } from 'react';
 import { Dashboard } from '../../pages/Dashboard';
 import { Header } from './Header';
 import { Sidebar } from './Sidebar';
+import { useSidebarStore } from '../../store/sidebar.store';
 
 export const Layout = () => {
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const isCollapsed = useSidebarStore((state) => state.isCollapsed);
+  const toggleSidebar = useSidebarStore((state) => state.toggleSidebar);
+
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
 
   const toggleTheme = () => {
@@ -15,11 +18,11 @@ export const Layout = () => {
 
   return (
     <div className={`layout ${isCollapsed ? 'collapsed' : ''}`}>
-      <Sidebar isCollapsed={isCollapsed} />
+      <Sidebar />
 
       <div className="main">
         <Header
-          toggleCollapse={() => setIsCollapsed(!isCollapsed)}
+          onSidebarToggle={toggleSidebar}
           toggleTheme={toggleTheme}
           theme={theme}
         />

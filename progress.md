@@ -26,7 +26,7 @@
 - [x] Setup React Query (QueryClient + Provider)
 - [x] Define service layer structure
 - [x] Define data flow: Service → Transform → Hook
-- [ ] Setup Zustand store (sidebar toggle)
+- [x] Setup Zustand store (sidebar toggle)
 
 #### 👨‍💻 Dev B (UI Foundation)
 
