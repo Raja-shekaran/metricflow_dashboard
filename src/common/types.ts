@@ -9,7 +9,7 @@ export type CardProps = {
 };
 
 export type HeaderProps = {
-  toggleCollapse: () => void;
+  onSidebarToggle: () => void;
   theme: 'light' | 'dark';
   toggleTheme: () => void;
 };
