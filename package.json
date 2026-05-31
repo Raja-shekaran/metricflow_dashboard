@@ -14,15 +14,18 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,scss,css,json,md}": [
-      "prettier --write"
+      "prettier --write",
+      "git add ."
     ]
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
+    "@tanstack/react-query": "^5.100.9",
     "axios": "^1.15.2",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
-    "sass": "^1.99.0"
+    "sass": "^1.99.0",
+    "zustand": "^5.0.13"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.4",

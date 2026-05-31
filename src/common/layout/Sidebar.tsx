@@ -1,4 +1,7 @@
-export const Sidebar = ({ isCollapsed }: { isCollapsed: boolean }) => {
+import { useSidebarStore } from '../../store/sidebar.store';
+
+export const Sidebar = () => {
+  const isCollapsed = useSidebarStore((state) => state.isCollapsed);
   return (
     <aside
       className={`
