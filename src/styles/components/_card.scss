@@ -3,12 +3,27 @@
 .card {
   background: var(--surface);
   border: 1px solid var(--border);
-
   border-radius: $radius-lg;
   padding: $space-lg;
 
   display: flex;
   flex-direction: column;
   gap: $space-md;
+
   width: 100%;
+
+  &_image {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    align-self: center;
+  }
+
+  &_title {
+    text-align: center;
+  }
+
+  &_value {
+    text-align: center;
+  }
 }

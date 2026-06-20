@@ -1,11 +1,16 @@
 export type CoinHistory = {
+  name: string;
+  logo: string;
   price: number;
-  symbol: string;
   marketCap: number;
 };
 
 export type CoinHistoryApiResponse = {
-  symbol: string;
+  name: string;
+  image: {
+    thumb: string;
+    small: string;
+  };
   market_data: {
     current_price: {
       usd: number;

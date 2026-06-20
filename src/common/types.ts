@@ -5,7 +5,8 @@ export type ButtonProps = {
 
 export type CardProps = {
   title: string;
-  value: string;
+  value?: string;
+  imageUrl?: string;
 };
 
 export type HeaderProps = {
