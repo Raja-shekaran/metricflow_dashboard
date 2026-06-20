@@ -25,7 +25,7 @@ export const Dashboard = () => {
 
   return (
     <div className="dashboard">
-      <Card title="Users" value={userData.total.toString()} />
+      <Card title="Users" value={userData.totalUsers.toString()} />
       <Card title="Bitcoin Price" value={`$${coinData.price}`} />
       <Card title="Market Cap" value={`$${coinData.marketCap}`} />
       <Card title="Symbol" value={coinData.symbol.toUpperCase()} />
