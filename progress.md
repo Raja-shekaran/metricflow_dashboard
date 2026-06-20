@@ -15,7 +15,7 @@
 
 ## ⚙️ Phase 2: Core Architecture Setup
 
-- [x] 🚧 **Phase 2 In Progress**
+- [x] ✅ **Phase 2 Complete**
 
 ### Tasks
 
@@ -45,7 +45,7 @@
 
 ## 🧱 Phase 3: Dashboard UI (Static)
 
-- [ ] 🚧 **Phase 3 Pending**
+- [x] 🚧 **Phase 3 In Progress**
 
 ### Tasks
 

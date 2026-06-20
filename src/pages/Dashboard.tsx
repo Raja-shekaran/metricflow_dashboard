@@ -1,12 +1,34 @@
 import { Card } from '../common/components/Card';
+import { useCoinHistory } from '../hooks/useCoinHistory';
+import { useUsers } from '../hooks/useUsers';
 
 export const Dashboard = () => {
+  const {
+    data: coinData,
+    isLoading: coinLoading,
+    error: coinError,
+  } = useCoinHistory();
+
+  const {
+    data: userData,
+    isLoading: userLoading,
+    error: userError,
+  } = useUsers();
+
+  if (coinLoading || userLoading) {
+    return <div>Loading...</div>;
+  }
+
+  if (coinError || userError || !coinData || !userData) {
+    return <div>Something went wrong</div>;
+  }
+
   return (
     <div className="dashboard">
-      <Card title="Total revenue" value="$1,284" />
-      <Card title="Monthly Profit" value="$42,920" />
-      <Card title="Trading Volume" value="$5.2M" />
-      <Card title="Accrued Fees" value="$1,840" />
+      <Card title="Users" value={userData.total.toString()} />
+      <Card title="Bitcoin Price" value={`$${coinData.price}`} />
+      <Card title="Market Cap" value={`$${coinData.marketCap}`} />
+      <Card title="Symbol" value={coinData.symbol.toUpperCase()} />
     </div>
   );
 };

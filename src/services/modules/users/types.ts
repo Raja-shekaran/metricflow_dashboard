@@ -1,15 +1,7 @@
-export type User = {
-  firstName: string;
-  lastName: string;
-  age: number;
-  country: string;
+export type Users = {
+  total: number;
 };
 
 export type UserApiResponse = {
-  firstName: string;
-  lastName: string;
-  age: number;
-  address: {
-    country: string;
-  };
+  total: number;
 };

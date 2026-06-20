@@ -1,10 +1,7 @@
-import type { User, UserApiResponse } from './types';
+import type { Users, UserApiResponse } from './types';
 
-export const transformUser = (data: UserApiResponse): User => {
+export const transformUsers = (data: UserApiResponse): Users => {
   return {
-    firstName: data.firstName,
-    lastName: data.lastName,
-    age: data.age,
-    country: data.address.country,
+    total: data.total,
   };
 };
