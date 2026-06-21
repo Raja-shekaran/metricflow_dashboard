@@ -1,0 +1,21 @@
+@use '../abstracts/variables' as *;
+
+.chart {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: $radius-lg;
+  padding: $space-lg;
+
+  min-height: 450px;
+
+  &_title {
+    margin-bottom: $space-lg;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  &_body {
+    width: 100%;
+    height: 400px;
+  }
+}

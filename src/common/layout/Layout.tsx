@@ -3,7 +3,6 @@ import { Dashboard } from '../../pages/Dashboard';
 import { Header } from './Header';
 import { Sidebar } from './Sidebar';
 import { useSidebarStore } from '../../store/sidebar.store';
-import { Charts } from '../../pages/Charts';
 
 export const Layout = () => {
   const isCollapsed = useSidebarStore((state) => state.isCollapsed);
@@ -29,9 +28,6 @@ export const Layout = () => {
         />
         <div className="content">
           <Dashboard />
-        </div>
-        <div>
-          <Charts />
         </div>
       </div>
     </div>

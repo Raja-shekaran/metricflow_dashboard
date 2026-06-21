@@ -1,5 +1,17 @@
 .dashboard {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  &_cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+  }
+
+  &_charts {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 }

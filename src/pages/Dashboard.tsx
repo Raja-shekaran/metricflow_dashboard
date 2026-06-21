@@ -2,6 +2,7 @@ import { Card } from '../common/components/Card';
 import { useCoinHistory } from '../hooks/useCoinHistory';
 import { useUsers } from '../hooks/useUsers';
 import { formatCurrency } from '../utils';
+import { ProductsChart } from './ProductsChart';
 
 export const Dashboard = () => {
   const {
@@ -26,15 +27,23 @@ export const Dashboard = () => {
 
   return (
     <div className="dashboard">
-      <Card
-        imageUrl={coinData.logo}
-        value={`$${formatCurrency(coinData.price)}`}
-      />
-      <Card
-        title="Market Cap"
-        value={`$${formatCurrency(coinData.marketCap)}`}
-      />
-      <Card title="Users" value={userData.totalUsers.toString()} />
+      <div className="dashboard_cards">
+        <Card
+          imageUrl={coinData.logo}
+          value={`$${formatCurrency(coinData.price)}`}
+        />
+
+        <Card
+          title="Market Cap"
+          value={`$${formatCurrency(coinData.marketCap)}`}
+        />
+
+        <Card title="Users" value={userData.totalUsers.toString()} />
+      </div>
+
+      <div className="dashboard_charts">
+        <ProductsChart />
+      </div>
     </div>
   );
 };
