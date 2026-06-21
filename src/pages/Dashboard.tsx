@@ -3,6 +3,7 @@ import { useCoinHistory } from '../hooks/useCoinHistory';
 import { useUsers } from '../hooks/useUsers';
 import { formatCurrency } from '../utils';
 import { ProductsChart } from './ProductsChart';
+import { UsersByCountryChart } from './UsersByCountryChart';
 
 export const Dashboard = () => {
   const {
@@ -43,6 +44,9 @@ export const Dashboard = () => {
 
       <div className="dashboard_charts">
         <ProductsChart />
+      </div>
+      <div className="dashboard_charts">
+        <UsersByCountryChart />
       </div>
     </div>
   );
