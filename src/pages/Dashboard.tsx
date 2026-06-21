@@ -26,16 +26,15 @@ export const Dashboard = () => {
 
   return (
     <div className="dashboard">
-      <Card title="Bitcoin" imageUrl={coinData.logo} />
-      <Card title="Users" value={userData.totalUsers.toString()} />
       <Card
-        title="Bitcoin Price"
+        imageUrl={coinData.logo}
         value={`$${formatCurrency(coinData.price)}`}
       />
       <Card
         title="Market Cap"
         value={`$${formatCurrency(coinData.marketCap)}`}
       />
+      <Card title="Users" value={userData.totalUsers.toString()} />
     </div>
   );
 };
